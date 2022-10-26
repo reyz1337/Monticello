@@ -49,8 +49,8 @@
     left: 50%;
     transform: translateX(-50%);
     background-image: url('../img/footer-bg.png');
-    background-position: bottom center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 1;
 }

@@ -17,6 +17,29 @@ $(document).ready(function(){
     });
   });
 
+  $(document).ready(function(){
+    $('.header__list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        vertical: false,
+        autoplay: true,
+        speed: 500,
+        fade: true,
+        mobileFirst: true,
+        dots: false,
+        /* responsive:[
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            }
+        ] */
+    });
+  });
+
   function initMap() {
     const CENTER = { lat: 40.67469454302943, lng: -73.90019021540337 };
     const MAP = new google.maps.Map(document.getElementById("map"), {
