@@ -23,6 +23,10 @@
     overflow: hidden;
   }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body.noscroll {
     overflow: hidden;
 }

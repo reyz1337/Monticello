@@ -27,17 +27,17 @@
                 </button>
                 <div class="mobile-menu">
                     <ul class="main-menu">
-                        <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">ABOUT US</a>
+                        <li class="main-menu__item main-menu__item_active">
+                            <a class="main-menu__link" href="#about_us">ABOUT US</a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">PROJECTS</a>
+                            <a class="main-menu__link" href="#projects">PROJECTS</a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">NEWS</a>
+                            <a class="main-menu__link" href="#news">NEWS</a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">CONTACT</a>
+                            <a class="main-menu__link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <ul class="social-network">
@@ -68,7 +68,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="about_us">
             <div class="container">
                 <div class="header__list">
                     <div class="title">
@@ -93,13 +93,15 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <svg class="icon">
-                        <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
+                    <a href="#projects" class="arrow__link">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <h2 class="project__title">WHAT WE DO</h2>
                 <div class="first-project__info">
@@ -136,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <h2 class="news__title">LATEST NEWS</h2>
                 <div class="list">
@@ -237,7 +239,7 @@
                 <button class="gallery-button"><span class="visually-hidden">See More</span>SEE MORE</button>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div id="map"></div>
                 <div class="form">

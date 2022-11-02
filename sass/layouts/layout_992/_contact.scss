@@ -1,0 +1,28 @@
+.contact {
+    position: relative;
+    .form {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        bottom: -150px;
+        transform: translateX(-50%);
+        .form-title {
+            font-size: 44px;
+        }
+        .form-info {
+            width: 650px;
+            display: flex;
+            margin: 0 auto;
+        }
+        .form-info__list {
+            max-width: 268px;
+            margin-bottom: 0;
+        }
+        .contact-form {
+            button {
+                width: 140px;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+}

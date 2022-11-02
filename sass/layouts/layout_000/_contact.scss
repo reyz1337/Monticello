@@ -96,6 +96,10 @@
                     font-size: 18px;
                     line-height: 27px;
                     background-color: $white;
+                    display: flex;
+                    margin: 0 auto;
+                    justify-content: center;
+                    align-items: center;
                 }
                 button:hover {
                     background-color: #26c5f6;

@@ -57,7 +57,7 @@ table {
   z-index: 2;
 }
 .header .container {
-  padding: 0 15px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,7 +116,7 @@ table {
   min-height: 100vh;
   width: 100%;
   top: 0;
-  left: -500px;
+  left: 100%;
   transition: left 0.2s ease;
 }
 .header .mobile-menu .main-menu {
@@ -230,6 +230,7 @@ table {
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .hero .arrow .icon {
   width: 40px;
@@ -239,7 +240,7 @@ table {
 .hero::after {
   content: " ";
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
@@ -247,7 +248,6 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
   background-image: url("../img/header-bg.png");
 }
 
@@ -401,7 +401,7 @@ table {
   position: relative;
 }
 .news .container {
-  padding: 100px 15px 60px;
+  padding: 80px 15px 60px;
 }
 .news .news__title {
   display: flex;
@@ -722,6 +722,10 @@ table {
   font-size: 18px;
   line-height: 27px;
   background-color: #fff;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 .contact .form .contact-form button:hover {
   background-color: #26c5f6;
@@ -817,8 +821,229 @@ table {
   overflow: hidden;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body.noscroll {
   overflow: hidden;
+}
+
+@media only screen and (min-width: 576px) {
+  .news .list {
+    max-width: 370px;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .projects .first-project__info .first-img {
+    display: flex;
+    justify-content: center;
+  }
+  .projects .first-project__info .first-project__button {
+    width: 190px;
+    height: 50px;
+  }
+  .projects .second-project__info .second-img {
+    display: flex;
+    justify-content: center;
+  }
+  .projects .second-project__info .first-project__button {
+    width: 190px;
+    height: 50px;
+  }
+  .gallery .gallery-button {
+    width: 190px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact .form .form-info {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .container {
+    max-height: 54px;
+    padding: 53px 15px;
+  }
+  .header .menu-button {
+    display: none;
+  }
+  .header .mobile-menu {
+    flex-direction: row;
+    position: static;
+    min-height: auto;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .header .mobile-menu .main-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .header .mobile-menu .main-menu__link {
+    font-size: 14px;
+  }
+  .header .mobile-menu .main-menu__item {
+    position: relative;
+    padding-left: 23px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 70px;
+  }
+  .header .mobile-menu .main-menu__item::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header .mobile-menu .main-menu__item_active::before {
+    background-color: #fff;
+  }
+  .header .mobile-menu .main-menu__item:hover::before {
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .header .social-network .social-network__item {
+    margin-right: 20px;
+  }
+  .header .social-network .social-network__item .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .projects {
+    overflow-x: hidden;
+  }
+  .projects .project__title {
+    margin-bottom: 90px;
+  }
+  .projects .first-project__info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 170px;
+    display: flex;
+  }
+  .projects .first-img {
+    position: relative;
+  }
+  .projects .first-img .blue-square {
+    position: absolute;
+    width: 630px;
+    height: 470px;
+    background-color: #55B7FF;
+    left: -260px;
+    top: -58px;
+    z-index: -1;
+  }
+  .projects .first-img img {
+    margin-bottom: 0;
+    margin-right: 30px;
+    width: 630px;
+    height: 470px;
+  }
+  .projects .first-info {
+    max-width: 476px;
+  }
+  .projects .first-info .first-title {
+    font-size: 44px;
+  }
+  .projects .second-project__info {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 150px;
+    display: flex;
+    position: relative;
+  }
+  .projects .second-img {
+    position: relative;
+  }
+  .projects .second-img .purpil-square {
+    position: absolute;
+    width: 630px;
+    height: 470px;
+    background-color: #7E5AFF;
+    left: 260px;
+    top: -58px;
+    z-index: -1;
+  }
+  .projects .second-img img {
+    margin-bottom: 0;
+    margin-left: 30px;
+    width: 630px;
+    height: 470px;
+  }
+  .projects .second-info {
+    max-width: 476px;
+  }
+  .projects .second-info .first-title {
+    font-size: 44px;
+  }
+  .news .list {
+    max-width: 770px;
+  }
+  .contact {
+    position: relative;
+  }
+  .contact .form {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: -150px;
+    transform: translateX(-50%);
+  }
+  .contact .form .form-title {
+    font-size: 44px;
+  }
+  .contact .form .form-info {
+    width: 650px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .contact .form .form-info__list {
+    max-width: 268px;
+    margin-bottom: 0;
+  }
+  .contact .form .contact-form button {
+    width: 140px;
+    margin: 0 0 0 auto;
+  }
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header .main-menu .main-menu__item {
+    margin-right: 70px;
+  }
+  .header .main-menu .main-menu__item:last-of-type {
+    margin-right: 110px;
+  }
+  .news .list {
+    max-width: 1970px;
+  }
+  .hero .container {
+    max-width: 100%;
+  }
+  .hero .header__title {
+    font-size: 80px;
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

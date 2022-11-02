@@ -7,9 +7,23 @@ $(document).ready(function(){
         autoplay: true,
         responsive:[
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
                     arrows: false
                 }
             }
@@ -29,14 +43,14 @@ $(document).ready(function(){
         fade: true,
         mobileFirst: true,
         dots: false,
-        /* responsive:[
+        responsive:[
             {
-                breakpoint: 768,
+                breakpoint: 1200,
                 settings: {
-                    dots: false
-                }
+                    dots: true
+                } 
             }
-        ] */
+        ]
     });
   });
 
@@ -66,6 +80,14 @@ $(document).ready(function(){
             MENU.classList.toggle('navigation_active');
             BODY.classList.toggle('noscroll');
         });
+        const LINKS = MENU.querySelectorAll('.main-menu__link');
+        LINKS.forEach(element => {
+            element.addEventListener('click', () => {
+                MENU.classList.remove('navigation_active');
+                document.body.classList.remove('noscroll');
+            });
+        });
+
     }
     menu();
 });

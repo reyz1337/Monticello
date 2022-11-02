@@ -5,7 +5,7 @@
     top: 0;
     z-index: 2;
     .container {
-        padding: 0 15px;
+        padding: 10px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,7 +64,7 @@
         min-height: 100vh;
         width: 100%;
         top: 0;
-        left: -500px;
+        left: 100%;
         transition: left 0.2s ease;
         .main-menu {
             width: 100%;
