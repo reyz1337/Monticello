@@ -61,7 +61,7 @@ $(document).ready(function(){
         zoom: 13
       });
       let svg_marker = {
-        url: '../img/google-map-marker.svg'
+        url: 'img/google-map-marker.svg'
       };
       let marker = new google.maps.Marker({
         position: { lat: 40.67939822201896, lng: -73.89861065122321},
