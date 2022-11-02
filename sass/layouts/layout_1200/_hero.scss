@@ -1,10 +1,46 @@
 .hero {
     .container {
         max-width: 100%;
+        position: relative;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
     }
     .header__title {
         font-size: 80px;
         font-weight: 700;
     }
-    
+    .slick-dots {
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        right: 52px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 0;
+        bottom: auto;
+        z-index: 2;
+        button {
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: solid 1px #fff;
+            border-radius: 50%;
+            background-color: transparent;
+            text-indent: -9999px;
+            cursor: pointer;
+        }
+    }
+    .slick-dots li.slick-active button {
+        background-color: $white;
+    }
+    .slick-dots li {
+        margin-bottom: 40px;
+    }
+    .slick-dots li:last-of-type {
+        margin-bottom: 0;
+    }
 }
