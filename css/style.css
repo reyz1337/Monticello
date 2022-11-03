@@ -1081,6 +1081,12 @@ body.noscroll {
   .hero .slick-dots li:last-of-type {
     margin-bottom: 0;
   }
+  .contact .container {
+    max-width: 100%;
+  }
+  .contact #map {
+    height: 850px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
