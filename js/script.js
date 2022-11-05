@@ -91,3 +91,11 @@ $(document).ready(function(){
     }
     menu();
 });
+$(document).ready(function(){
+    $('.ph_link').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      },
+    });
+});

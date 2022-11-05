@@ -1,6 +1,7 @@
 .gallery {
     .container{
         padding: 60px 15px 0px;
+        margin: 0 auto;
     }
     .gallery__title {
         font-family: 'Montserrat', sans-serif;
@@ -56,8 +57,11 @@
             transition: opacity 0.5s ease;
             cursor: pointer;
         }
-        .photo-list__item::before:hover {
-            overflow: visible;
+        .photo-list__item:hover::before {
+            opacity: 1;
+        }
+        .ph_link {
+            display: flex;
         }
     }
     .gallery-button {

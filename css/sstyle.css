@@ -574,6 +574,12 @@ table {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   margin-bottom: 60px;
+  /* .photo-list__item:hover::before {
+      opacity: 1;
+  } */
+  /* .photo-list__item::before:hover {
+      overflow: visible;
+  } */
 }
 .gallery .photo-list .photo-list__item {
   display: flex;
@@ -599,15 +605,9 @@ table {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease;
   cursor: pointer;
-}
-.gallery .photo-list .photo-list__item:hover::before {
-  opacity: 1;
-}
-.gallery .photo-list .ph_link {
-  display: flex;
 }
 .gallery .gallery-button {
   width: 100%;
@@ -1108,4 +1108,4 @@ body.noscroll {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sstyle.css.map */
