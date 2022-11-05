@@ -1,0 +1,146 @@
+.news {
+    background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    position: relative;
+    .container {
+        padding: 80px 15px 60px;
+    }
+    .news__title {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        margin-bottom: 50px;
+        color: $white;
+        position: relative;
+    }
+    .news__title::before {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: $white;
+        position: absolute;
+        align-items: center;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card {
+        max-width: 370px;
+        min-height: 514px;
+        background-color: $white;
+        margin-bottom: 30px;
+        .top-card {
+            max-width: 370px;
+            max-height: 240px;
+            margin-bottom: 35px;
+            img {
+                max-width: 100%;
+            }
+        }
+        .main-card {
+            padding: 0 20px;
+            .main-card__title {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: $black;
+                margin-bottom: 15px;
+            }
+            .main-card__text {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: $black;
+                margin-bottom: 39px;
+            }
+        }
+        .footer-card {
+            padding-left: 20px;
+            display: flex;
+            padding-bottom: 30px;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+            .footer-card__info {
+                padding-left: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .footer-card__info-name {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: $black;
+                    margin-bottom: 6px;
+                }
+                .footer-card__info-date {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .list {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .slick-list .draggable {
+        margin: 0 auto;
+        max-width: 1200px;
+        position: relative;
+    }
+    .slick-next {
+        position: absolute;
+        top: 45%;
+        right: -50px;
+        z-index: 2;
+    }
+    .slick-next:before {
+        content: url('../img/slick controls/Right.svg');
+    }
+    .slick-prev {
+        position: absolute;
+        top: 45%;
+        left: -100px;
+        z-index: 2;
+    }
+    .slick-prev:before {
+        content: url('../img/slick controls/Left.svg');;
+    }
+    .slick-dots li.slick-active button:before {
+        content: url('../img/slick controls/Dot_Active.svg');
+    }
+    .slick-dots li button:before {
+        content: url('../img/slick controls/Dot.svg');
+    }
+    .slick-dots {
+        z-index: 2;
+    }
+}
+.news::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/news-bg.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}

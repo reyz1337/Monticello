@@ -1,0 +1,11 @@
+.gallery {
+    .container {
+        padding: 150px 15px 30px;
+    }
+    .photo-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery-button {
+        margin-bottom: 150px;
+    }
+}
